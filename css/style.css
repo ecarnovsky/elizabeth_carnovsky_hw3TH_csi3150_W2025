@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+
+    --primary-text-color: white;
+    --secondary-text-color: rgb(255, 255, 255);
+
+    color: var(--primary-text-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans Condensed", serif;
+}
+
+i {
+    color:var(--secondary-text-color);
+}
+
+/* Background adjustments */
+
+section, footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-section{
+    min-height: 100vh;
+    background-image: url("../images/pexels-raybilcliff-1533483.jpg");
+}
+
+
+.trip-section{
+    min-height: 500px;
+    background-image: url("../images/pexels-squaredesign-253905.jpg");
+}
+
+.locations-section{
+    min-height: 900px;
+    background-image: url("../images/pexels-peterfazekas-1170601.jpg");
+}
+
+.more-info-section{
+    min-height: 600px;
+    background-image: url("../images/pexels-marian-strinoiu-1805558-30752631.jpg");
+}
+.stats-section{
+    min-height: 400px;
+    background-image: url("../images/pexels-fotios-photos-722024.jpg");
+}
+
+.person-section{
+    min-height: 700px;
+    background-image: url("../images/pexels-thatguycraig000-1563356.jpg");
+}
+
+.image-section{
+    min-height: 400px;
+}
+
+footer {
+    min-height: 600px;
+    background-image: url("../images/pexels-eberhardgross-629167.jpg");
+
+}
+
+
+/* Main Styling */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+    margin-bottom: 80px;
+}
+
+.hero-section img {
+    max-width: 250px;
+}
+
+.hero-section h1 {
+    color: var(--secondary-text-color);
+    font-size: 66px;
+}
+
+
+
+.locations-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.locations-section > div {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.locations-section > div > div {
+    max-width: 350px;
+    max-height: 500px;
+}
+.locations-section > div > div > div{
+    width: 100%;
+    height: 100%;
+}
+.locations-section img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.image-section {
+    display: flex;
+    align-items: stretch;
+}
+.image-section > div {
+    width: 25%;
+}
+
+.image-section > div  > img {
+    width: 100%;
+    height: 100%;
+}
