@@ -6,14 +6,13 @@
     font-family: sans-serif;
 
     --primary-text-color: white;
-    --secondary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgb(207, 68, 4);
 
     color: var(--primary-text-color);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Fira Sans Condensed", serif;
 }
-
 i {
     color:var(--secondary-text-color);
 }
@@ -76,6 +75,10 @@ footer {
     justify-content: center;
 }
 
+.hero-section i {
+    font-size: 100px;
+}
+
 
 .hero-section > div {
     display: flex;
@@ -87,7 +90,6 @@ footer {
 }
 
 .hero-section h1 {
-    color: var(--secondary-text-color);
     font-size: 66px;
 }
 
