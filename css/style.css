@@ -17,9 +17,11 @@
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Fira Sans Condensed", serif;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 i {
     color:var(--secondary-text-color);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Background adjustments */
@@ -81,9 +83,9 @@ footer {
     justify-content: center;
 }
 
-.hero-section * {
+/* .hero-section * {
     text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .hero-section i {
     font-size: 100px;
