@@ -24,6 +24,11 @@ i {
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
+.inline-text-highlight-div{
+    display: inline;
+    color: var(--secondary-text-color);
+}
+
 /* Background adjustments */
 
 section, footer {
