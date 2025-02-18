@@ -86,10 +86,6 @@ footer {
     margin-bottom: 80px;
 }
 
-.hero-section img {
-    max-width: 250px;
-}
-
 .hero-section h1 {
     color: var(--secondary-text-color);
     font-size: 66px;
