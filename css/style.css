@@ -123,6 +123,10 @@ footer {
 
 
 
+
+
+
+
 .locations-section{
     display: flex;
     flex-direction: column;
@@ -154,6 +158,7 @@ footer {
 
 
 
+
 .image-section {
     display: flex;
     align-items: stretch;
@@ -165,4 +170,67 @@ footer {
 .image-section > div  > img {
     width: 100%;
     height: 100%;
+}
+
+
+
+
+
+
+/* Background Black Overlay */
+
+section, footer{
+    position: relative;
+}
+
+section *, footer * {
+    position: relative;
+    z-index: 2;
+}
+
+section::before, footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-section::before{
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); 
+}
+.trip-section::before{
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); 
+}
+.locations-section::before{
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); 
+}
+.more-info-section::before{
+    background: rgba(0, 0, 0, 0.3);
+}
+.stats-section::before{
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); 
+}
+.person-section::before{
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.9); 
+}
+footer::before{
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); 
+}
+
+
+
+
+
+/* Media Queries */
+
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #2B2A33;
+    }
 }
