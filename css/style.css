@@ -25,6 +25,14 @@ i {
     color:var(--secondary-text-color);
     text-shadow:  1px 1px 10px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(255, 255, 255, 0.3);
 }
+.bx-chevron-down, .bx-chevron-up, .bx-chevron-right, .bx-chevron-left, .social-icons-div > * {
+    transition: 0.05s ease all;
+}
+.bx-chevron-down:hover, .bx-chevron-up:hover, .bx-chevron-right:hover, .bx-chevron-left:hover, .social-icons-div > *:hover {
+    scale: 102%;
+    color: var(--secondary-text-color-brightened);
+    cursor: pointer;
+}
 
 .inline-text-highlight-div{
     display: inline;
