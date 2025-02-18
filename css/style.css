@@ -80,6 +80,18 @@ footer {
 }
 
 
+
+.hero-section h3,  .hero-section h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-section h2 { 
+    padding-top: 7px;
+}
+
+
 .hero-section > div {
     display: flex;
     flex-direction: column;
@@ -91,6 +103,7 @@ footer {
 
 .hero-section h1 {
     font-size: 66px;
+    padding: 10px 0  20px 0;
 }
 
 
