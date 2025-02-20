@@ -7,6 +7,7 @@
     padding: 0;
 
     font-family: sans-serif;
+    font-size: 1.1rem;
 
     --primary-text-color: white;
     --secondary-text-color: rgb(207, 68, 4);
@@ -108,13 +109,28 @@ footer {
     min-height: 500px;
     margin-bottom: 80px;
 }
-
-.hero-section h1 {
+.hero-section h1, .hero-section h1 > div {
     font-size: 66px;
+}
+.hero-section h1 {
     padding: 10px 0  20px 0;
 }
 
 
+/* Trip Section */
+
+.trip-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+.trip-section > * {
+    width: 48%;
+}
+
+.trip-section h2{
+    font-size: 4rem;
+}
 
 
 
@@ -229,6 +245,9 @@ footer::before{
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     transition: background-color 0.15s ease-in-out;
+    display: block;
+    max-width: 140px;
+    text-align: center;
 }
 .btn:hover {
     background-color: var(--secondary-text-color-brightened);
