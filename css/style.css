@@ -248,6 +248,7 @@ footer::before{
     display: block;
     max-width: 140px;
     text-align: center;
+    margin-top: 40px;
 }
 .btn:hover {
     background-color: var(--secondary-text-color-brightened);
