@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6 {
 i {
     color:var(--secondary-text-color);
     text-shadow:  1px 1px 10px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(255, 255, 255, 0.3);
-    font-size: 100px;
 }
 .bx-chevron-down, .bx-chevron-up, .bx-chevron-right, .bx-chevron-left, .social-icons-div > * {
     transition: 0.05s ease all;
@@ -116,6 +115,9 @@ footer {
 
 .hero-section h2 { 
     padding-top: 7px;
+}
+.hero-section i {
+    font-size: 100px;
 }
 
 .hero-section > div {
@@ -209,8 +211,10 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .stats-section > div {
+    margin: 20px;
     background-color: var(--secondary-text-color-alpha);
     height: 230px;
     width: 230px;
@@ -246,6 +250,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.person-section i {
+    font-size: 100px;
 }
 
 .person-section span, .person-section i, .person-section p {
