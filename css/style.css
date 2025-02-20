@@ -37,6 +37,15 @@ i {
     color: var(--secondary-text-color);
 }
 
+/* Set padding on sections */
+
+section, footer{
+    padding: 100px 100px;
+}
+.hero-section, .image-section{
+    padding: 0;
+}
+
 /* Background Image and
 Section Height Adjustments */
 
@@ -125,7 +134,7 @@ footer {
     padding: 100px 100px;
 }
 .trip-section > * {
-    width: 48%;
+    max-width: 48%;
 }
 
 .trip-section h2{
@@ -161,6 +170,24 @@ footer {
 .locations-section img {
     width: 100%;
     height: 100%;
+}
+.locations-section h2{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+/* More Info Section */
+
+.more-info-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.more-info-section h2{
+    font-size: 4rem;;
+}
+.more-info-section > * {
+    max-width: 48%
 }
 
 
