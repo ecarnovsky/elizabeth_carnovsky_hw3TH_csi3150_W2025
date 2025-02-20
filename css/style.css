@@ -9,12 +9,15 @@
     font-family: sans-serif;
     font-size: 1.1rem;
 
-    --primary-text-color: white;
+    --primary-text-color: rgb(255, 255, 255);
+    --primary-text-color-alpha: rgba(255, 255, 255, 0.9);
     --secondary-text-color: rgb(207, 68, 4);
     --secondary-text-color-brightened: rgb(236, 80, 2);
+    --secondary-text-color-alpha: rgba(236, 80, 2, 0.83);
 
-    color: var(--primary-text-color);
+    color: var(--primary-text-color-alpha);
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Fira Sans Condensed", sans-serif;
     text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
@@ -98,6 +101,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.hero-section h1,.hero-section h2, .hero-section h3 { 
+    color:var(--primary-text-color);
 }
 
 .hero-section i {
@@ -207,7 +214,7 @@ footer {
     align-items: center;
 }
 .stats-section > div {
-    background-color: var(--secondary-text-color);
+    background-color: var(--secondary-text-color-alpha);
     height: 230px;
     width: 230px;
     border-radius: 50%;
@@ -215,13 +222,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 90%;
+    /* opacity: 90%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .stats-section > div > * {
     padding: 10px 0;
     color: white;
     font-weight: 600;
+}
+.stats-section > div > span{
+    color: var(--primary-text-color)
 }
 .stats-section > div > span:nth-child(1){
     font-size: 3rem;
