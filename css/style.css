@@ -7,18 +7,16 @@
     padding: 0;
 
     font-family: sans-serif;
+    font-size: 1.1rem;
 
     --primary-text-color: white;
     --secondary-text-color: rgb(207, 68, 4);
     --secondary-text-color-brightened: rgb(236, 80, 2);
-    /* --secondary-text-color: rgb(255, 72, 0); */
-    /* --secondary-text-color: rgb(131, 0, 17); */
-    /* --secondary-text-color: rgb(255, 81, 0); */
 
     color: var(--primary-text-color);
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Fira Sans Condensed", serif;
+    font-family: "Fira Sans Condensed", sans-serif;
     text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 i {
@@ -37,6 +35,15 @@ i {
 .inline-text-highlight-div{
     display: inline;
     color: var(--secondary-text-color);
+}
+
+/* Set padding on sections */
+
+section, footer{
+    padding: 100px 100px;
+}
+.hero-section, .image-section{
+    padding: 0;
 }
 
 /* Background Image and
@@ -111,13 +118,28 @@ footer {
     min-height: 500px;
     margin-bottom: 80px;
 }
-
-.hero-section h1 {
+.hero-section h1, .hero-section h1 > div {
     font-size: 66px;
+}
+.hero-section h1 {
     padding: 10px 0  20px 0;
 }
 
 
+/* Trip Section */
+
+.trip-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+.trip-section > * {
+    max-width: 48%;
+}
+
+.trip-section h2{
+    font-size: 4rem;
+}
 
 
 
@@ -148,6 +170,29 @@ footer {
 .locations-section img {
     width: 100%;
     height: 100%;
+}
+.locations-section h2{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+/* More Info Section */
+
+.more-info-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.more-info-section h2{
+    font-size: 4rem;;
+}
+.more-info-section > * {
+    max-width: 48%
+}
+
+.more-info-section h6{
+    margin-top: 13px;
+    margin-bottom: 3px;
 }
 
 
@@ -232,6 +277,10 @@ footer::before{
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     transition: background-color 0.15s ease-in-out;
+    display: block;
+    max-width: 140px;
+    text-align: center;
+    margin-top: 40px;
 }
 .btn:hover {
     background-color: var(--secondary-text-color-brightened);
