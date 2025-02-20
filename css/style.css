@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 i {
     color:var(--secondary-text-color);
     text-shadow:  1px 1px 10px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(255, 255, 255, 0.3);
+    font-size: 100px;
 }
 .bx-chevron-down, .bx-chevron-up, .bx-chevron-right, .bx-chevron-left, .social-icons-div > * {
     transition: 0.05s ease all;
@@ -75,7 +76,7 @@ section, footer {
     background-image: url("../images/pexels-peterfazekas-1170601.jpg");
 }
 .more-info-section{
-    min-height: 600px;
+    min-height: 570px;
     background-image: url("../images/pexels-marian-strinoiu-1805558-30752631.jpg");
 }
 .stats-section{
@@ -83,7 +84,7 @@ section, footer {
     background-image: url("../images/pexels-fotios-photos-722024.jpg");
 }
 .person-section{
-    min-height: 700px;
+    min-height: 850px;
     background-image: url("../images/pexels-thatguycraig000-1563356.jpg");
 }
 .image-section{
@@ -105,10 +106,6 @@ footer {
 
 .hero-section h1,.hero-section h2, .hero-section h3 { 
     color:var(--primary-text-color);
-}
-
-.hero-section i {
-    font-size: 100px;
 }
 
 .hero-section h3,  .hero-section h2{
@@ -222,7 +219,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* opacity: 90%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .stats-section > div > * {
@@ -244,8 +240,33 @@ footer {
 
 /* Person section */
 
-span{
+.person-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.person-section span, .person-section i, .person-section p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.person-section p{
+    max-width: 720px;
+}
+
+.person-section span{
     display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.person-section img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    box-shadow: 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 
