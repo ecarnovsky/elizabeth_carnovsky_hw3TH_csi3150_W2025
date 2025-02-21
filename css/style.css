@@ -379,3 +379,11 @@ footer::before{
         background-color: #2B2A33;
     }
 }
+
+
+
+@media (max-width: 485px) {
+    section, footer {
+        padding: 60px 40px;
+    }
+}
